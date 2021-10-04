@@ -17,20 +17,21 @@
         <div class="side col-2">
             <div class="buttons px-3 py-5">
                 <nav class="nav nav-pills flex-column">
-                    <a class="flex-sm-fill nav-link active" aria-current="page" href="#">Dashboard</a>
+                    <a class="flex-sm-fill nav-link js-dashboard" aria-current="page" href="#">Dashboard</a>
+                    <a class="flex-sm-fill nav-link active js-review-visits" href="#">View Records</a>
                     <a class="flex-sm-fill nav-link" href="#">New Patients</a>
-                    <a class="flex-sm-fill nav-link" href="#">View Records</a>
                     <a class="flex-sm-fill nav-link disabled">Settings</a>
                   </nav>
             </div>
         </div>
 
         <div class="main col-10 bg-light">
-            <div class="d-none review-visits-page main-content container px-5 py-5">
+            <div class="d-none main-content container px-5 py-5">
 
             </div>
             
-            <div class="review-visits-page main-content container px-5 py-5">
+            <!-- Review Visits -->
+            <div class="review-visits-page js-review-visits-page main-content container px-5 py-5">
                 <h2 class="mb-3">Review Visits</h2>
 
                 <div class="content-wrapper d-flex flex-row justify-content-around">
@@ -87,7 +88,7 @@
             </div>
 
             <!-- Past Diagnosis -->
-            <div class="d-none dashboard-page main-content container px-5 py-5">
+            <div class="d-none dashboard-page js-dashboard-page main-content container px-5 py-5">
 
                 <h2 class="mb-3">Past Diagnosis</h2>
 
@@ -144,6 +145,9 @@
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
